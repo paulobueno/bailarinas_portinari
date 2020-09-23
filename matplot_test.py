@@ -7,10 +7,6 @@ from matplotlib.collections import PatchCollection
 
 from functions import tiles_order as to
 
-bailarinas = to.TileClass('Bailarina')
-parede = to.Wall(246, 96)
-pedido = to.Order(parede, bailarinas)
-
 
 def wall_preview(order):
     fig, ax = plt.subplots()
@@ -76,4 +72,8 @@ def wall_preview(order):
     plt.show()
 
 
-wall_preview(pedido)
+if __name__ == '__main__':
+    bailarinas = to.TileClass('Bailarina')
+    parede = to.Wall(246, 96)
+    pedido = to.Order(parede, bailarinas)
+    wall_preview(pedido)
