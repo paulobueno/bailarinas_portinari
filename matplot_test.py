@@ -1,6 +1,8 @@
 import math
 from random import shuffle
 
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 from matplotlib.collections import PatchCollection
